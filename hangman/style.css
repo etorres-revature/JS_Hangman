@@ -27,15 +27,15 @@ h1 {
 }
 
 .figure-container {
-    fill: transparent;
-    stroke: #fff;
-    stroke-width: 4px;
-    stroke-linecap: round;
-  }
-  
-  .figure-part {
-    display: none;
-  }
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.figure-part {
+  display: none;
+}
 
 .wrong-letters-container {
   position: absolute;
@@ -51,8 +51,7 @@ h1 {
 }
 
 .wrong-letters-container span {
-  font-size: 28px;
-  font-weight: 685;
+  font-size: 24px;
 }
 
 .word {
@@ -64,12 +63,12 @@ h1 {
 }
 
 .letter {
-  border-bottom: 3px solid coral;
+  border-bottom: 3px solid #2980b9;
   display: inline-flex;
   font-size: 30px;
   align-items: center;
   justify-content: center;
-  margin: 0 4px;
+  margin: 0 3px;
   height: 50px;
   width: 20px;
 }
@@ -81,6 +80,7 @@ h1 {
   bottom: 0;
   left: 0;
   right: 0;
+  /* display: flex; */
   display: none;
   align-items: center;
   justify-content: center;
@@ -104,11 +104,11 @@ h1 {
   font-size: 16px;
 }
 
-.popoup button:active {
+.popup button:active {
   transform: scale(0.98);
 }
 
-.popoup button:focus {
+.popup button:focus {
   outline: 0;
 }
 
@@ -118,7 +118,7 @@ h1 {
   padding: 15px 20px;
   position: absolute;
   bottom: -50px;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .notification-container p {
@@ -126,7 +126,5 @@ h1 {
 }
 
 .notification-container.show {
-    transform: translateY(-50px);
-  }
-
-
+  transform: translateY(-50px);
+}
