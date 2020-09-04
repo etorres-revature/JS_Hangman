@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HangMan</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="#"/>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
+    <link rel="icon" type="image/png" href="#" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <h1>Hangman</h1>
 
     <p>Find the hidden word - Enter a letter</p>
-<div class="game-container">
-    <svg height="250" width="200"class="figure-container">
-          <!-- gallows -->
-    <line x1="60" y1="20" x2="140" y2="20" />
-    <line x1="140" y1="20" x2="140" y2="50" />
-    <line x1="60" y1="20" x2="60" y2="200" />
-    <line x1="10" y1="200" x2="110" y2="200" />
+    <div class="game-container">
+      <svg height="250" width="200" class="figure-container">
+        <!-- gallows -->
+        <line x1="60" y1="20" x2="140" y2="20" />
+        <line x1="140" y1="20" x2="140" y2="50" />
+        <line x1="60" y1="20" x2="60" y2="200" />
+        <line x1="10" y1="200" x2="110" y2="200" />
 
-    <!-- head/circle -->
-    <circle cx="140" cy="70" r="20"/>
-    <!-- body -->
-    <line x1="140" y1="90" x2="140" y2="140" />
-    <!-- left arm -->
-    <line x1="160" y1="120" x2="140" y2="100" />
-    <!-- right arm -->
-    <line x1="140" y1="100" x2="120" y2="120" />
-    <!-- left leg -->
-    <line x1="140" y1="140" x2="125" y2="178" />
-    <!-- right arm -->
-    <line x1="140" y1="140" x2="155" y2="178" />
+        <!-- head/circle -->
+        <circle cx="140" cy="70" r="20" class="figure-part" />
+        <!-- body -->
+        <line x1="140" y1="90" x2="140" y2="140" class="figure-part" />
+        <!-- left arm -->
+        <line x1="160" y1="120" x2="140" y2="100" class="figure-part" />
+        <!-- right arm -->
+        <line x1="140" y1="100" x2="120" y2="120" class="figure-part" />
+        <!-- left leg -->
+        <line x1="140" y1="140" x2="125" y2="178" class="figure-part" />
+        <!-- right arm -->
+        <line x1="140" y1="140" x2="155" y2="178" class="figure-part" />
+      </svg>
 
-    </svg>
-</div>
+      <div class="wrong-letters-container">
+        <div id="wrong-letters">
+          <p>wrong</p>
+          <span>e, e, e, f, </span>
+        </div>
+      </div>
+
+      <div class="word" id="word">
+          <div class="letter">h</div>
+          <div class="letter">e</div>
+          <div class="letter">l</div>
+          <div class="letter">l</div>
+          <div class="letter">o</div>
+      </div>
+    </div>
+
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message">You lose!!</h2>
+            <button id="play-button">Play Again?</button>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification-container" id="notification-container">
+        <p>You have already entered this letter</p>
+    </div>
+    
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
