@@ -20,7 +20,7 @@ Correct letters are displayed in the positon of the word where it appears.  Wron
 
  The game also lets players know that they lost and feels their pain with the crying emoji. 
 
- ![HANGMAN lose](.images/screenshots/hangman-lose.png)
+ ![HANGMAN lose](./images/screenshots/hangman-lose.png)
 
  In either event, a button to "Play Again?" is displayed. 
 
